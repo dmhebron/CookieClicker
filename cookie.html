@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cookie.css">
+    <title>Cookie Game</title>
+</head>
+<body>
+
+    <h2>Cookie Counter</h2>
+    <p id="demo">0</p>
+
+    <script>
+    const add = (function () {
+      let counter = 0;
+      return function () {counter ++; return counter;}
+    })();
+    
+    function myFunction(){
+      document.getElementById("demo").innerHTML = add();
+    }
+    </script>
+    
+
+    <button type="button" value="Bake a Cookie" onclick="myFunction()"> <img src="/images/ccc.jpeg" alt="Cookie"> </button>
+    <button type="button" value="Hire a Baker" onclick="hireBaker()" >Hire a Baker</button>
+
+
+
+
+    <script src="/cookie.js"></script>
+    
+    </body>
+</body>
+</html>
