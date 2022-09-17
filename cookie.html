@@ -9,27 +9,40 @@
 </head>
 <body>
 
-    <h2>Cookie Counter</h2>
-    <p id="demo">0</p>
+    <h1>Cookie Clicker Remake</h1>
+    <!--<p id="count">0</p>
 
-    <script>
-    const add = (function () {
-      let counter = 0;
+     <script>
+    const add = (function () {let counter = 0;
       return function () {counter ++; return counter;}
     })();
     
     function myFunction(){
-      document.getElementById("demo").innerHTML = add();
+      document.getElementById("count").innerHTML = add();
     }
-    </script>
-    
+    </script> -->
+      <main> 
+<!-- using w3 schools I was able to click the cookie button and get an output -->
+      <button class="amount" type="button" value="Bake a Cookie" onclick="myFunction()"> <img src="/images/ccc.jpeg" alt="Cookie"> </button>
+      <p id="test"></p>
+      <script>
+        function myFunction() {
+          document.getElementById("test").innerHTML = "Cookie Count :0";
+        }
+      </script>
 
-    <button type="button" value="Bake a Cookie" onclick="myFunction()"> <img src="/images/ccc.jpeg" alt="Cookie"> </button>
-    <button type="button" value="Hire a Baker" onclick="hireBaker()" >Hire a Baker</button>
+      <!-- I was also able to make an output of 2 when clicking the -->
+      <button class="baker" type="button" value="Hire a Baker" onclick="hireBaker()" >Hire a Baker</button>
+      <p id="work"></p>
+      <script>
+        function hireBaker() {
+          document.getElementById("work").innerHTML = "2";
+        }
+      </script>
+      </main>
 
-
-
-
+      
+<!--Link JS file to HTML file-->
     <script src="/cookie.js"></script>
     
     </body>
